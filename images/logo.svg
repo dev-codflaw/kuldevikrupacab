@@ -1,7 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <!-- Background -->
   <rect width="84" height="84" rx="18" fill="#0B3D62"/>
-  <path d="M20 52 L24 38 a6 6 0 0 1 6-4 h24 a6 6 0 0 1 6 4 l4 14 z" fill="#FFC845"/>
-  <circle cx="30" cy="54" r="6" fill="#0B3D62" stroke="#fff" stroke-width="3"/>
-  <circle cx="54" cy="54" r="6" fill="#0B3D62" stroke="#fff" stroke-width="3"/>
-  <rect x="30" y="36" width="24" height="10" rx="2" fill="#FF7A30"/>
+  <!-- Cab body -->
+  <path d="M18 54 L22 38 a7 7 0 0 1 7-5 h28 a7 7 0 0 1 7 5 l4 16 z" fill="#FFC845"/>
+  <!-- Cab roof / cabin -->
+  <rect x="28" y="33" width="28" height="12" rx="3" fill="#0B3D62" opacity="0.6"/>
+  <!-- Windows -->
+  <rect x="30" y="35" width="11" height="8" rx="2" fill="#E0F4FF" opacity="0.9"/>
+  <rect x="43" y="35" width="11" height="8" rx="2" fill="#E0F4FF" opacity="0.9"/>
+  <!-- Wheels -->
+  <circle cx="28" cy="56" r="7" fill="#0B3D62"/>
+  <circle cx="28" cy="56" r="4" fill="#FFC845"/>
+  <circle cx="56" cy="56" r="7" fill="#0B3D62"/>
+  <circle cx="56" cy="56" r="4" fill="#FFC845"/>
+  <!-- KKC text -->
+  <text x="42" y="74" font-family="Arial, sans-serif" font-size="9" font-weight="800" fill="#FFC845" text-anchor="middle" letter-spacing="1.5">KKC</text>
 </svg>
