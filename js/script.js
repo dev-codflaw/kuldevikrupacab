@@ -1,9 +1,12 @@
 /* =========================================================
-   ONEWAY CAB — MINIMAL JS
+   KULDEVI KRUPA CAB — MAIN JS
    - Mobile nav toggle
    - Booking widget tab switching
+   - WhatsApp form submission (all booking & contact forms)
    - FAQ accordion (services page)
    ========================================================= */
+
+var WA_NUMBER = "919586724300"; // +91 95867 24300 (test number)
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -22,10 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
   tabButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       var target = btn.getAttribute("data-tab");
-
       tabButtons.forEach(function (b) { b.classList.remove("active"); });
       btn.classList.add("active");
-
       panels.forEach(function (p) {
         p.classList.toggle("active", p.getAttribute("data-panel") === target);
       });
@@ -44,13 +45,118 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* ---- Booking forms: simple success feedback (no backend) ---- */
-  document.querySelectorAll(".booking-panel form, .contact-form-card form").forEach(function (form) {
-    form.addEventListener("submit", function (e) {
+  /* ---- Utility: format date nicely ---- */
+  function formatDate(val) {
+    if (!val) return "—";
+    var d = new Date(val + "T00:00:00");
+    return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+  }
+
+  /* ---- Utility: open WhatsApp with message ---- */
+  function sendToWhatsApp(message) {
+    var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+  }
+
+  /* ---- ONE WAY form ---- */
+  var owForm = document.querySelector('[data-panel="oneway"] form');
+  if (owForm) {
+    owForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      alert("Thanks! Your request has been noted. Our team will call you shortly.\n(Connect this form to your backend / WhatsApp / email to receive real bookings.)");
-      form.reset();
+      var from    = document.getElementById("ow-from").value;
+      var to      = document.getElementById("ow-to").value;
+      var date    = formatDate(document.getElementById("ow-date").value);
+      var mobile  = document.getElementById("ow-mobile").value;
+
+      var msg =
+        "🚖 *New Cab Enquiry — One Way*\n\n" +
+        "📍 From  : " + from   + "\n" +
+        "📍 To    : " + to     + "\n" +
+        "📅 Date  : " + date   + "\n" +
+        "📱 Mobile: " + mobile + "\n\n" +
+        "Please confirm availability & fare.\n" +
+        "— KuldeviKrupaCab.com";
+
+      sendToWhatsApp(msg);
+      owForm.reset();
     });
-  });
+  }
+
+  /* ---- ROUND TRIP form ---- */
+  var rtForm = document.querySelector('[data-panel="roundtrip"] form');
+  if (rtForm) {
+    rtForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var from    = document.getElementById("rt-from").value;
+      var to      = document.getElementById("rt-to").value;
+      var date    = formatDate(document.getElementById("rt-date").value);
+      var mobile  = document.getElementById("rt-mobile").value;
+
+      var msg =
+        "🔄 *New Cab Enquiry — Round Trip*\n\n" +
+        "📍 From      : " + from   + "\n" +
+        "📍 To        : " + to     + "\n" +
+        "📅 Departure : " + date   + "\n" +
+        "📱 Mobile    : " + mobile + "\n\n" +
+        "Please confirm availability & fare.\n" +
+        "— KuldeviKrupaCab.com";
+
+      sendToWhatsApp(msg);
+      rtForm.reset();
+    });
+  }
+
+  /* ---- LOCAL RENTAL form ---- */
+  var loForm = document.querySelector('[data-panel="local"] form');
+  if (loForm) {
+    loForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var city    = document.getElementById("lo-city").value;
+      var pkg     = document.getElementById("lo-package").value;
+      var date    = formatDate(document.getElementById("lo-date").value);
+      var mobile  = document.getElementById("lo-mobile").value;
+
+      var msg =
+        "🏙️ *New Cab Enquiry — Local Rental*\n\n" +
+        "📍 City    : " + city   + "\n" +
+        "📦 Package : " + pkg    + "\n" +
+        "📅 Date    : " + date   + "\n" +
+        "📱 Mobile  : " + mobile + "\n\n" +
+        "Please confirm availability & fare.\n" +
+        "— KuldeviKrupaCab.com";
+
+      sendToWhatsApp(msg);
+      loForm.reset();
+    });
+  }
+
+  /* ---- CONTACT PAGE form ---- */
+  var cForm = document.querySelector(".contact-form-card form");
+  if (cForm) {
+    cForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name    = document.getElementById("c-name").value;
+      var mobile  = document.getElementById("c-mobile").value;
+      var from    = document.getElementById("c-from").value    || "—";
+      var to      = document.getElementById("c-to").value      || "—";
+      var date    = formatDate(document.getElementById("c-date").value);
+      var cab     = document.getElementById("c-cab").value     || "Not specified";
+      var message = document.getElementById("c-message").value || "—";
+
+      var msg =
+        "📋 *Cab Booking Request*\n\n" +
+        "👤 Name   : " + name    + "\n" +
+        "📱 Mobile : " + mobile  + "\n" +
+        "📍 From   : " + from    + "\n" +
+        "📍 To     : " + to      + "\n" +
+        "📅 Date   : " + date    + "\n" +
+        "🚗 Cab    : " + cab     + "\n" +
+        "💬 Note   : " + message + "\n\n" +
+        "— KuldeviKrupaCab.com";
+
+      sendToWhatsApp(msg);
+      cForm.reset();
+    });
+  }
 
 });
