@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oneway Cab — #1 Taxi Service Rajkot | 24x7 Cab Booking Gujarat</title>
+  <meta name="description" content="Book one way cab from Rajkot to Ahmedabad, Dwarka, Somnath, Jamnagar & 50+ Gujarat cities. Lowest fares, AC cabs, 24x7.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== TOP STRIP ===================== -->
+  <div class="top-strip">
+    <div class="marquee">
+      <span>24x7 Available — Call +91 81285 96790</span>
+      <span>Rajkot → Ahmedabad One Way @ ₹2,499/-</span>
+      <span>Hirasar Airport Transfers — On Time Guarantee</span>
+      <span>15+ Years Trusted Service</span>
+      <span>50+ Gujarat Cities Covered</span>
+      <span>No Hidden Charges — Fixed Fares</span>
+      <span>AC Cabs — Sedan, SUV &amp; Tempo Traveller</span>
+      <span>24x7 Available — Call +91 81285 96790</span>
+      <span>Rajkot → Ahmedabad One Way @ ₹2,499/-</span>
+      <span>Hirasar Airport Transfers — On Time Guarantee</span>
+      <span>15+ Years Trusted Service</span>
+      <span>50+ Gujarat Cities Covered</span>
+      <span>No Hidden Charges — Fixed Fares</span>
+      <span>AC Cabs — Sedan, SUV &amp; Tempo Traveller</span>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Oneway Cab logo">
+        <span class="logo-text">Oneway Cab<small>Premium Taxi Service</small></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#routes">Routes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+918128596790" class="nav-call">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.06 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+          +91 81285 96790
+        </a>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Rajkot's #1 Cab Service</span>
+        <h1>Travel anywhere in Gujarat — <em>safe &amp; affordable</em></h1>
+        <p>24x7 one way, round trip &amp; outstation taxi. Clean AC cars, professional drivers, transparent pricing. 50+ Gujarat cities covered.</p>
+        <div class="hero-actions">
+          <a href="tel:+918128596790" class="btn btn-primary">Call +91 81285 96790</a>
+          <a href="#book" class="btn btn-outline">Book Online →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>15+</strong><span>Years Experience</span></div>
+          <div class="stat"><strong>50+</strong><span>Cities Covered</span></div>
+          <div class="stat"><strong>12k+</strong><span>Happy Riders</span></div>
+          <div class="stat"><strong>4.9★</strong><span>Average Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-cab.svg" alt="Oneway Cab AC taxi ready for a Gujarat trip">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKING WIDGET ===================== -->
+  <div class="container" id="book">
+    <div class="booking-widget">
+      <div class="booking-tabs">
+        <button class="active" data-tab="oneway">One Way</button>
+        <button data-tab="roundtrip">Round Trip</button>
+        <button data-tab="local">Local Rental</button>
+      </div>
+
+      <div class="booking-panel active" data-panel="oneway">
+        <form>
+          <div class="field">
+            <label for="ow-from">From City</label>
+            <select id="ow-from" required>
+              <option value="">Select city</option>
+              <option>Rajkot</option><option>Ahmedabad</option><option>Jamnagar</option>
+              <option>Somnath</option><option>Dwarka</option><option>Morbi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ow-to">To City</label>
+            <select id="ow-to" required>
+              <option value="">Select city</option>
+              <option>Rajkot</option><option>Ahmedabad</option><option>Jamnagar</option>
+              <option>Somnath</option><option>Dwarka</option><option>Morbi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ow-date">Pickup Date</label>
+            <input type="date" id="ow-date" required>
+          </div>
+          <div class="field">
+            <label for="ow-mobile">Mobile No. *</label>
+            <input type="tel" id="ow-mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Get Free Quote</button>
+        </form>
+      </div>
+
+      <div class="booking-panel" data-panel="roundtrip">
+        <form>
+          <div class="field">
+            <label for="rt-from">From City</label>
+            <select id="rt-from" required>
+              <option value="">Select city</option>
+              <option>Rajkot</option><option>Ahmedabad</option><option>Jamnagar</option>
+              <option>Somnath</option><option>Dwarka</option><option>Morbi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rt-to">To City</label>
+            <select id="rt-to" required>
+              <option value="">Select city</option>
+              <option>Rajkot</option><option>Ahmedabad</option><option>Jamnagar</option>
+              <option>Somnath</option><option>Dwarka</option><option>Morbi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rt-date">Departure</label>
+            <input type="date" id="rt-date" required>
+          </div>
+          <div class="field">
+            <label for="rt-mobile">Mobile No. *</label>
+            <input type="tel" id="rt-mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Book Round Trip</button>
+        </form>
+      </div>
+
+      <div class="booking-panel" data-panel="local">
+        <form>
+          <div class="field">
+            <label for="lo-city">City</label>
+            <select id="lo-city" required>
+              <option value="">Select city</option>
+              <option>Rajkot</option><option>Ahmedabad</option><option>Jamnagar</option>
+              <option>Somnath</option><option>Dwarka</option><option>Morbi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="lo-package">Package</label>
+            <select id="lo-package" required>
+              <option value="">Select package</option>
+              <option>4 hr / 40 km</option>
+              <option>8 hr / 80 km</option>
+              <option>12 hr / 120 km</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="lo-date">Date</label>
+            <input type="date" id="lo-date" required>
+          </div>
+          <div class="field">
+            <label for="lo-mobile">Mobile No. *</label>
+            <input type="tel" id="lo-mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Book Local Cab</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Gujarat's most trusted cab service</h2>
+        <p>15 years of experience, 12,000+ happy passengers, 50+ cities covered across Gujarat.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>100% Safe Rides</h3>
+          <p>Police verified drivers, GPS tracked vehicles, live trip sharing.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>24x7 Available</h3>
+          <p>Day or night, early morning or late night — we are always ready.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Fixed Transparent Fare</h3>
+          <p>Price quoted is price paid. No hidden charges, no surprises.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22l5.5-1.5L17 11l-5-5L2 16.5z"/><path d="M14.5 4.5l5 5"/><path d="M2 22l1.5-5.5"/></svg>
+          </div>
+          <h3>Airport Specialists</h3>
+          <p>Hirasar, Ahmedabad &amp; Keshod Airport — on time, every time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POPULAR ROUTES ===================== -->
+  <section id="routes">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Popular Routes</span>
+        <h2>50+ Gujarat cities — direct cab</h2>
+        <p>Select your city and book instantly — guaranteed lowest fares.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Rajkot -->
+        <div class="route-card">
+          <div class="route-img">
+            <img src="images/city-rajkot.svg" alt="Rajkot cab service">
+            <span class="tag">Cab from</span>
+            <span class="city-name">Rajkot</span>
+            <span class="count">15 Routes</span>
+          </div>
+          <ul class="route-list">
+            <li><span class="route-name">Rajkot → Ahmedabad <span class="route-km">220 km</span></span><span class="route-price">₹2,499</span></li>
+            <li><span class="route-name">Rajkot → Hirasar Airport <span class="route-km">26 km</span></span><span class="route-price">₹899</span></li>
+            <li><span class="route-name">Rajkot → Jamnagar <span class="route-km">88 km</span></span><span class="route-price">₹1,699</span></li>
+            <li><span class="route-name">Rajkot → Somnath <span class="route-km">198 km</span></span><span class="route-price">₹2,999</span></li>
+            <li><span class="route-name">Rajkot → Dwarka <span class="route-km">240 km</span></span><span class="route-price">₹3,299</span></li>
+            <li><span class="route-name">Rajkot → Morbi <span class="route-km">62 km</span></span><span class="route-price">₹1,499</span></li>
+          </ul>
+          <a href="contact.html" class="route-cta">Book Cab from Rajkot</a>
+        </div>
+
+        <!-- Ahmedabad -->
+        <div class="route-card">
+          <div class="route-img">
+            <img src="images/city-ahmedabad.svg" alt="Ahmedabad cab service">
+            <span class="tag">Cab from</span>
+            <span class="city-name">Ahmedabad</span>
+            <span class="count">14 Routes</span>
+          </div>
+          <ul class="route-list">
+            <li><span class="route-name">Ahmedabad → Rajkot <span class="route-km">220 km</span></span><span class="route-price">₹2,499</span></li>
+            <li><span class="route-name">Ahmedabad → Surat <span class="route-km">264 km</span></span><span class="route-price">₹3,299</span></li>
+            <li><span class="route-name">Ahmedabad → Vadodara <span class="route-km">110 km</span></span><span class="route-price">₹1,799</span></li>
+            <li><span class="route-name">Ahmedabad → Gandhinagar <span class="route-km">28 km</span></span><span class="route-price">₹999</span></li>
+            <li><span class="route-name">Ahmedabad → Somnath <span class="route-km">400 km</span></span><span class="route-price">₹5,499</span></li>
+            <li><span class="route-name">Ahmedabad → Dwarka <span class="route-km">440 km</span></span><span class="route-price">₹5,999</span></li>
+          </ul>
+          <a href="contact.html" class="route-cta">Book Cab from Ahmedabad</a>
+        </div>
+
+        <!-- Jamnagar -->
+        <div class="route-card">
+          <div class="route-img">
+            <img src="images/city-jamnagar.svg" alt="Jamnagar cab service">
+            <span class="tag">Cab from</span>
+            <span class="city-name">Jamnagar</span>
+            <span class="count">10 Routes</span>
+          </div>
+          <ul class="route-list">
+            <li><span class="route-name">Jamnagar → Rajkot <span class="route-km">88 km</span></span><span class="route-price">₹1,599</span></li>
+            <li><span class="route-name">Jamnagar → Dwarka <span class="route-km">142 km</span></span><span class="route-price">₹2,499</span></li>
+            <li><span class="route-name">Jamnagar → Ahmedabad <span class="route-km">298 km</span></span><span class="route-price">₹3,799</span></li>
+            <li><span class="route-name">Jamnagar → Morbi <span class="route-km">68 km</span></span><span class="route-price">₹1,499</span></li>
+            <li><span class="route-name">Jamnagar → Porbandar <span class="route-km">128 km</span></span><span class="route-price">₹1,999</span></li>
+            <li><span class="route-name">Jamnagar → Hirasar Airport <span class="route-km">62 km</span></span><span class="route-price">₹1,999</span></li>
+          </ul>
+          <a href="contact.html" class="route-cta">Book Cab from Jamnagar</a>
+        </div>
+
+        <!-- Somnath -->
+        <div class="route-card">
+          <div class="route-img">
+            <img src="images/city-somnath.svg" alt="Somnath cab service">
+            <span class="tag">Cab from</span>
+            <span class="city-name">Somnath</span>
+            <span class="count">10 Routes</span>
+          </div>
+          <ul class="route-list">
+            <li><span class="route-name">Somnath → Rajkot <span class="route-km">198 km</span></span><span class="route-price">₹2,999</span></li>
+            <li><span class="route-name">Somnath → Dwarka <span class="route-km">232 km</span></span><span class="route-price">₹3,499</span></li>
+            <li><span class="route-name">Somnath → Ahmedabad <span class="route-km">400 km</span></span><span class="route-price">₹5,499</span></li>
+            <li><span class="route-name">Somnath → Junagadh <span class="route-km">86 km</span></span><span class="route-price">₹1,799</span></li>
+            <li><span class="route-name">Somnath → Sasan Gir <span class="route-km">65 km</span></span><span class="route-price">₹1,199</span></li>
+            <li><span class="route-name">Somnath → Porbandar <span class="route-km">122 km</span></span><span class="route-price">₹1,999</span></li>
+          </ul>
+          <a href="contact.html" class="route-cta">Book Cab from Somnath</a>
+        </div>
+
+        <!-- Dwarka -->
+        <div class="route-card">
+          <div class="route-img">
+            <img src="images/city-dwarka.svg" alt="Dwarka cab service">
+            <span class="tag">Cab from</span>
+            <span class="city-name">Dwarka</span>
+            <span class="count">10 Routes</span>
+          </div>
+          <ul class="route-list">
+            <li><span class="route-name">Dwarka → Rajkot <span class="route-km">240 km</span></span><span class="route-price">₹3,299</span></li>
+            <li><span class="route-name">Dwarka → Jamnagar <span class="route-km">142 km</span></span><span class="route-price">₹2,499</span></li>
+            <li><span class="route-name">Dwarka → Somnath <span class="route-km">232 km</span></span><span class="route-price">₹3,499</span></li>
+            <li><span class="route-name">Dwarka → Ahmedabad <span class="route-km">440 km</span></span><span class="route-price">₹5,999</span></li>
+            <li><span class="route-name">Dwarka → Porbandar <span class="route-km">107 km</span></span><span class="route-price">₹1,999</span></li>
+            <li><span class="route-name">Dwarka → Bet Dwarka <span class="route-km">30 km</span></span><span class="route-price">₹999</span></li>
+          </ul>
+          <a href="contact.html" class="route-cta">Book Cab from Dwarka</a>
+        </div>
+
+        <!-- Morbi -->
+        <div class="route-card">
+          <div class="route-img">
+            <img src="images/city-morbi.svg" alt="Morbi cab service">
+            <span class="tag">Cab from</span>
+            <span class="city-name">Morbi</span>
+            <span class="count">10 Routes</span>
+          </div>
+          <ul class="route-list">
+            <li><span class="route-name">Morbi → Rajkot <span class="route-km">62 km</span></span><span class="route-price">₹1,499</span></li>
+            <li><span class="route-name">Morbi → Ahmedabad <span class="route-km">264 km</span></span><span class="route-price">₹2,499</span></li>
+            <li><span class="route-name">Morbi → Jamnagar <span class="route-km">68 km</span></span><span class="route-price">₹1,499</span></li>
+            <li><span class="route-name">Morbi → Dwarka <span class="route-km">300 km</span></span><span class="route-price">₹2,999</span></li>
+            <li><span class="route-name">Morbi → Surendranagar <span class="route-km">60 km</span></span><span class="route-price">₹1,199</span></li>
+            <li><span class="route-name">Morbi → Bhuj <span class="route-km">90 km</span></span><span class="route-price">₹2,999</span></li>
+          </ul>
+          <a href="contact.html" class="route-cta">Book Cab from Morbi</a>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:40px;">
+        <a href="contact.html" class="btn btn-dark-outline">View All 50+ Routes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Services</span>
+        <h2>The right cab for every journey</h2>
+        <p>From quick local errands to multi-day yatra trips — we've got you covered.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="service-card">
+          <div class="service-img"><img src="images/service-oneway.svg" alt="One Way Cab"></div>
+          <div class="service-body">
+            <h3>One Way Cab</h3>
+            <p>Single trip — pay only for one side. No return charges.</p>
+            <ul>
+              <li>50+ destinations</li>
+              <li>No return charges</li>
+              <li>Fixed fares</li>
+              <li>Doorstep pickup</li>
+            </ul>
+            <a href="services.html" class="service-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/service-roundtrip.svg" alt="Round Trip cab"></div>
+          <div class="service-body">
+            <h3>Round Trip</h3>
+            <p>Go and return in the same cab. Best economy option.</p>
+            <ul>
+              <li>Same driver return</li>
+              <li>Multi-stop allowed</li>
+              <li>Sightseeing friendly</li>
+              <li>Best per-km rate</li>
+            </ul>
+            <a href="services.html" class="service-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/service-airport.svg" alt="Airport transfer cab"></div>
+          <div class="service-body">
+            <h3>Airport Transfer</h3>
+            <p>Hirasar, Ahmedabad &amp; Keshod — on time, every time.</p>
+            <ul>
+              <li>Flight tracking</li>
+              <li>30-min free wait</li>
+              <li>Flat fixed fares</li>
+              <li>Meet &amp; greet</li>
+            </ul>
+            <a href="services.html" class="service-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/service-outstation.svg" alt="Outstation travel cab"></div>
+          <div class="service-body">
+            <h3>Outstation Travel</h3>
+            <p>Long distance trips across Gujarat, Rajasthan &amp; beyond.</p>
+            <ul>
+              <li>Highway experts</li>
+              <li>Premium SUVs</li>
+              <li>Multi-day packages</li>
+              <li>All India permits</li>
+            </ul>
+            <a href="services.html" class="service-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/service-local.svg" alt="Local rental cab"></div>
+          <div class="service-body">
+            <h3>Local Rental</h3>
+            <p>Hourly packages for meetings, shopping &amp; city tours.</p>
+            <ul>
+              <li>4/8/12 hr packages</li>
+              <li>AC cabs</li>
+              <li>Multiple stops</li>
+              <li>Expert driver</li>
+            </ul>
+            <a href="services.html" class="service-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/service-yatra.svg" alt="Religious yatra cab"></div>
+          <div class="service-body">
+            <h3>Religious Yatra</h3>
+            <p>Somnath, Dwarka, Sasan Gir, Girnar special packages.</p>
+            <ul>
+              <li>4 Dham packages</li>
+              <li>Comfortable journey</li>
+              <li>Group rates</li>
+              <li>Expert drivers</li>
+            </ul>
+            <a href="services.html" class="service-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FLEET ===================== -->
+  <section class="fleet">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Fleet</span>
+        <h2>Clean &amp; comfortable AC cabs</h2>
+        <p>Well-maintained vehicles, professional drivers — Gujarat's best fleet.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="fleet-card">
+          <div class="fleet-img"><img src="images/car-sedan.svg" alt="Sedan cab"></div>
+          <span class="fleet-tag">Most Popular</span>
+          <div class="fleet-body">
+            <h3>Sedan</h3>
+            <div class="fleet-model">Swift Dzire / Etios / Amaze</div>
+            <div class="fleet-price">₹12<span>/km onwards</span></div>
+            <div class="fleet-specs">
+              <span>4 Passengers</span><span>AC</span><span>Luggage Space</span><span>GPS</span>
+            </div>
+          </div>
+        </div>
+        <div class="fleet-card">
+          <div class="fleet-img"><img src="images/car-suv.svg" alt="SUV cab"></div>
+          <span class="fleet-tag">Family Favourite</span>
+          <div class="fleet-body">
+            <h3>SUV</h3>
+            <div class="fleet-model">Innova Crysta / Ertiga / Scorpio</div>
+            <div class="fleet-price">₹18<span>/km onwards</span></div>
+            <div class="fleet-specs">
+              <span>7 Passengers</span><span>AC</span><span>Large Boot</span><span>Long Trips</span>
+            </div>
+          </div>
+        </div>
+        <div class="fleet-card">
+          <div class="fleet-img"><img src="images/car-tempo.svg" alt="Tempo Traveller"></div>
+          <span class="fleet-tag">Group Travel</span>
+          <div class="fleet-body">
+            <h3>Tempo Traveller</h3>
+            <div class="fleet-model">Force Traveller / Toyota Commuter</div>
+            <div class="fleet-price">₹28<span>/km onwards</span></div>
+            <div class="fleet-specs">
+              <span>12-17 Passengers</span><span>AC</span><span>Large Space</span><span>Groups</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Customer Reviews</span>
+        <h2>12,000+ happy riders</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Trip from Rajkot to Dwarka was very smooth. Driver on time, AC cab clean, price reasonable. Will definitely book again!"</p>
+          <div class="testimonial-author">
+            <div class="avatar">R</div>
+            <div><strong>Ramesh Patel</strong><span>Rajkot</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Booked for Hirasar Airport pickup. Driver waited after delayed flight with no extra charge. Excellent service!"</p>
+          <div class="testimonial-author">
+            <div class="avatar">P</div>
+            <div><strong>Priya Shah</strong><span>Ahmedabad</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Booked Innova for family Somnath yatra. Very experienced driver. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="avatar">M</div>
+            <div><strong>Mahesh Joshi</strong><span>Jamnagar</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Use Oneway Cab regularly for Morbi to Ahmedabad office trips. Always punctual and professional."</p>
+          <div class="testimonial-author">
+            <div class="avatar">K</div>
+            <div><strong>Kavita Trivedi</strong><span>Morbi</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Cab drop to Rajkot after Girnar trekking. Very comfortable. Driver was very helpful throughout."</p>
+          <div class="testimonial-author">
+            <div class="avatar">D</div>
+            <div><strong>Dhruv Mehta</strong><span>Junagadh</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Took 3-day Dwarka 4 Dham yatra package. Everything perfect. Best price in market!"</p>
+          <div class="testimonial-author">
+            <div class="avatar">S</div>
+            <div><strong>Sonal Desai</strong><span>Rajkot</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Book now — confirmation in 10 minutes!</h2>
+      <p>Available 24x7. 50+ Gujarat cities. No hidden charges.</p>
+      <div class="hero-actions">
+        <a href="tel:+918128596790" class="btn btn-primary" style="background:var(--color-primary);">Call: +91 81285 96790</a>
+        <a href="https://wa.me/918128596790" class="btn btn-outline">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Oneway Cab logo">
+            <span class="logo-text">Oneway Cab</span>
+          </a>
+          <p>Rajkot's most trusted one way cab service. Safe, comfortable and affordable rides across Gujarat &amp; India.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.5h-1.2c-1.2 0-1.5.7-1.5 1.5v1.7h2.6L15.6 15h-2.2v7A10 10 0 0 0 22 12z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="https://wa.me/918128596790" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A10.4 10.4 0 0 0 12 0a10.4 10.4 0 0 0-9 15.6L1 22l6.6-1.9A10.4 10.4 0 0 0 12 21a10.4 10.4 0 0 0 8.5-17.5zM12 19.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 19.2z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#routes">All Routes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Routes</h4>
+          <ul>
+            <li><a href="contact.html">Rajkot → Ahmedabad</a></li>
+            <li><a href="contact.html">Rajkot → Dwarka</a></li>
+            <li><a href="contact.html">Rajkot → Somnath</a></li>
+            <li><a href="contact.html">Rajkot → Jamnagar</a></li>
+            <li><a href="contact.html">Airport Transfers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>304, Raviraj Complex, Near Balaji Hall, Rajkot, Gujarat</span>
+          </div>
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.06 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+918128596790">+91 81285 96790</a>
+          </div>
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            <a href="mailto:info@onewaycab.com">info@onewaycab.com</a>
+          </div>
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>24 / 7 Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 Oneway Cab. All rights reserved. | Built with <a href="#">your brand template</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE BOTTOM BAR ===================== -->
+  <div class="mobile-bar">
+    <div class="container">
+      <a href="tel:+918128596790" class="call">Call</a>
+      <a href="contact.html" class="book">Book Now</a>
+      <a href="https://wa.me/918128596790" class="whatsapp">WhatsApp</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
