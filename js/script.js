@@ -6,7 +6,7 @@
    - FAQ accordion (services page)
    ========================================================= */
 
-var WA_NUMBER = "919586724300"; // +91 95867 24300 (test number)
+var WA_NUMBER = "919909953795"; // +91 9909953795
 
 document.addEventListener("DOMContentLoaded", function () {
 
