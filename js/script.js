@@ -159,4 +159,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  /* ---- City card images: fade in on load ---- */
+  document.querySelectorAll(".route-img img").forEach(function (img) {
+    if (img.complete) {
+      img.classList.add("loaded");
+    } else {
+      img.addEventListener("load", function () { img.classList.add("loaded"); });
+    }
+  });
+
 });
