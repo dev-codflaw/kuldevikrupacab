@@ -1221,43 +1221,15 @@ body.error-page::before{
 }
 
 .error-content h1{
-  font-size:clamp(2rem, 4vw, 3rem);
-  margin-bottom:14px;
+  font-size:clamp(1.85rem, 4vw, 2.7rem);
+  margin-bottom:8px;
 }
 
 .error-content p{
-  max-width:580px;
+  max-width:360px;
   margin:0 auto;
   color:var(--color-text-light);
-  font-size:1rem;
-}
-
-.error-highlights{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-  margin:28px 0;
-}
-
-.error-highlight{
-  padding:16px 14px;
-  background:var(--color-bg);
-  border:1px solid var(--color-border);
-  border-radius:18px;
-}
-
-.error-highlight strong{
-  display:block;
-  font-family:var(--font-heading);
-  font-size:1.15rem;
-  color:var(--color-primary);
-  margin-bottom:4px;
-}
-
-.error-highlight span{
-  display:block;
-  font-size:.82rem;
-  color:var(--color-text-light);
+  font-size:.94rem;
 }
 
 .error-actions{
@@ -1265,7 +1237,7 @@ body.error-page::before{
   flex-wrap:wrap;
   justify-content:center;
   gap:12px;
-  margin-bottom:20px;
+  margin:18px 0 12px;
 }
 
 .error-actions .btn{
@@ -1310,7 +1282,6 @@ body.error-page::before{
   .contact-grid{grid-template-columns:1fr;}
   .service-detail.reverse .service-detail-media{order:0;}
   .timeline{grid-template-columns:repeat(2,1fr);}
-  .error-highlights{grid-template-columns:1fr;}
 }
 
 @media (max-width:768px){
@@ -1362,33 +1333,36 @@ body.error-page::before{
 
   .error-shell{
     align-items:flex-start;
-    padding:18px 0;
+    padding:8px 0;
   }
 
   .error-card{
-    border-radius:24px;
+    border-radius:20px;
   }
 
   .error-card-top{
-    padding:22px 20px 0;
+    padding:12px 14px 0;
   }
 
   .error-card-top::after{
-    left:20px;
-    right:20px;
+    left:14px;
+    right:14px;
   }
 
   .error-content{
-    padding:20px 20px 24px;
+    padding:12px 14px 14px;
   }
 
   .error-actions{
     flex-direction:column;
+    gap:8px;
   }
 
   .error-actions .btn{
     width:100%;
     min-width:0;
+    padding:11px 16px;
+    font-size:.9rem;
   }
 
 }
@@ -1401,10 +1375,18 @@ body.error-page::before{
     align-items:flex-start;
   }
   .error-brand img{
-    width:46px;
-    height:46px;
+    width:40px;
+    height:40px;
   }
   .error-content h1{
-    font-size:1.85rem;
+    font-size:1.45rem;
+    line-height:1.2;
+  }
+  .error-content p{
+    font-size:.88rem;
+  }
+  .error-mini{
+    font-size:.66rem;
+    letter-spacing:.14em;
   }
 }
